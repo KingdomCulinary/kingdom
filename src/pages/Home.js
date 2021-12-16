@@ -5,7 +5,7 @@ import PostCard from "../components/cards/PostCard";
 function Home() {
     return (
         <div>
-            <Banner Page="Dashboard" />
+            <Banner Page="Home" />
             <main style={styles.mainContainer}>
                 <PostCard id="Paul" />
                 <PostCard id="Sam" style={styles.secContainer} />

@@ -1,0 +1,14 @@
+@import "./../../sass/variables.scss";
+
+.container {
+        display: 'flex';
+        flex-Direction: 'row';
+        background-Color: 'white';
+        justify-Content: 'space-between';
+        padding: '1%';
+        align-Content: 'center'
+}
+
+.cart {
+    color: $primaryLight
+}

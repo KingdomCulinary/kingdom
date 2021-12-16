@@ -1,43 +1,17 @@
 import React from "react";
-import SrchComp from "../button/Search";
 import Logo from "../../images/logo.jpg"
-import { GrNotification } from "react-icons/gr";
+import classes from "./Banner.module.scss";
+import { RiShoppingCartLine } from "react-icons/ri";
+import ProfMenu from "../../components/profile/ProfMenu";
 
 //Dummy 
 const Banner = (props) => {
     return (
-        <header style={styles.container}>
+        <header className={classes.container}>
             <img src={Logo} alt="logo" />
-            <h1 style={styles.title}>{props.Page}</h1>
-            <SrchComp />
-            <span>
-                <GrNotification style={styles.space} />
-                <img src={props.tNail} alt={props.alt} style={styles.pic} />
-            </span>
+            <ProfMenu usrName="Log In" />
+            <RiShoppingCartLine className={classes.cart} />
         </header>
     )
 }
 export default Banner;
-
-//Style the header here
-// Use flex
-
-const styles = {
-    container: {
-        display: 'flex',
-        flexDirection: 'row',
-        backgroundColor: 'white',
-        justifyContent: 'space-between',
-        padding: '1%',
-        alignContent: 'center'
-    },
-    title: {
-        marginTop: '0rem'
-    },
-    pic: {
-        marginTop: '0rem'
-    },
-    space: {
-        paddingRight: '1rem'
-    },
-}
