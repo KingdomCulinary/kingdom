@@ -1,0 +1,44 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+
+
+$Pfonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Rajdhani",
+sans-serif;
+
+// colors
+
+// Spacing
+$spacing-md: 1.6rem;
+$spacing-lg: 3.2rem;
+
+// Border radius
+$borderRadius: 1.2rem;
+
+// Header height
+$headerHeight: 10rem;
+
+// mixins
+@mixin mq($size) {
+    @if $size == xsmall {
+      @media (max-width: 575.98px) {
+        @content;
+      }
+    } @else if $size == small {
+        @media (min-width: 576px) and (max-width: 767.98px) {
+        @content;
+      }
+    } @else if $size == medium {
+        @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+      }
+    } @else if $size == large {
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+        @content;
+      }
+    } @else if $size == xlarge {
+        @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  }

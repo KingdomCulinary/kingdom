@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
 import './App.scss';
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Dashboard />} />
-        <Route path='dashboard' element={<Dashboard />} />
+        <Route path='/' element={<Home />} />
+        <Route path='home' element={<Home />} />
       </Routes>
     </div>
   );

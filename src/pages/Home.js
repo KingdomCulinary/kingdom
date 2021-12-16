@@ -2,30 +2,29 @@ import React from "react";
 import Banner from "../components/banner/Banner";
 import PostCard from "../components/cards/PostCard";
 
-function Dashboard() {
+function Home() {
     return (
         <div>
             <Banner Page="Dashboard" />
             <main style={styles.mainContainer}>
                 <PostCard id="Paul" />
-                <PostCard id="Sam" />
+                <PostCard id="Sam" style={styles.secContainer} />
                 <PostCard id="Tom" />
             </main>
         </div>
     );
 }
-export default Dashboard
+export default Home
 
 const styles = {
     mainContainer: {
         display: "flex",
-        height: "100%"
+        justifyContent: "space-between",
+        height: "100%",
+
     },
     secContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        height: '100vh',
-        justifyContent: "space-between"
+        display: 'flex: 2'
     },
     nav: {
         display: 'flex',

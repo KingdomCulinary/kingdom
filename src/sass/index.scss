@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+  text-decoration: none;
+  font-weight: normal;
+  color: inherit;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: $Pfonts;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+#root {
+  height: 100vh;
+}
