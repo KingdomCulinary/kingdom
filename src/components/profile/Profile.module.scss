@@ -3,7 +3,10 @@
 .container {
     display: flex;
     flex-Direction: row;
-    // background-Color: '$accent4';
-    justify-Content: start;
-    align-Content: center;
+    
+};
+
+.profile__icon {
+    font-size: 1rem;
+    margin-right: .5rem;
 }

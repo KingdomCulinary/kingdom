@@ -5,7 +5,7 @@ import classes from "./Profile.module.scss";
 const ProfMenu = (props) => {
     return (
         <div className={classes.container}>
-            <MdPerson />
+            <MdPerson className={classes.profile__icon} />
             <h5>{props.usrName}</h5>
         </div>
     );
