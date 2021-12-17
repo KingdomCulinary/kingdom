@@ -1,0 +1,9 @@
+@import "./../../sass/variables.scss";
+
+.container {
+    display: flex;
+    flex-Direction: row;
+    // background-Color: '$accent4';
+    justify-Content: start;
+    align-Content: center;
+}

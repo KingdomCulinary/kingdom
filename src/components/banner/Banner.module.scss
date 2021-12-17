@@ -1,12 +1,11 @@
 @import "./../../sass/variables.scss";
 
 .container {
-        display: 'flex';
-        flex-Direction: 'row';
-        background-Color: 'white';
-        justify-Content: 'space-between';
-        padding: '1%';
-        align-Content: 'center'
+        display: flex;
+        flex-Direction: row;
+        background-Color: $accent4;
+        justify-Content: space-between;
+        align-Content: center;
 }
 
 .cart {

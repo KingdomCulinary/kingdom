@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+.container {
+  display: "flex";
+  flex-Direction: "row";
+  background-Color: "$accent4";
+  justify-Content: "space-between";
+  padding: "1%";
+  align-Content: "center";
+}
+
+.cart {
+  color: #FA844B;
+}/*# sourceMappingURL=Banner.module.css.map */

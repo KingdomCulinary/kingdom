@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,kBAAkB;AAElB,aAAa;AAEb,aAAa",
-    "sources": [
-        "../src/App.scss"
-    ],
-    "names": [],
-    "file": "App.css"
-}
+{"version":3,"sourceRoot":"","sources":["../src/App.scss"],"names":[],"mappings":"AAAA","file":"App.css.map"}
