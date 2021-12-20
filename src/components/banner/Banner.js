@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../../images/KC_logo.png";
 import classes from "./Banner.module.scss";
-import Navigation from "./../navigation/Navigation"
+import Navigation from "./../navigation/Navigation";
+import ProfMenu from "./../profile/ProfMenu"
 import { RiShoppingCartLine } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -14,6 +15,7 @@ const Banner = (props) => {
                 <Navigation />
                 <div className={classes.header__cart__menu}>
                     <RiShoppingCartLine className={classes.header__cart} />
+                    <ProfMenu usrName="Log In" className={classes.header__profile} />
                     <GiHamburgerMenu className={classes.header__menu} />
                 </div>
             </div>

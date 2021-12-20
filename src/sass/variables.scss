@@ -35,12 +35,8 @@ $headerHeight: 10rem;
 
 // mixins
 @mixin mq($size) {
-    @if $size == xsmall {
-      @media (max-width: 575.98px) {
-        @content;
-      }
-    } @else if $size == small {
-        @media (min-width: 576px) {
+    @if $size == small {
+        @media (max-width: 575px) {
         @content;
       }
     } @else if $size == medium {

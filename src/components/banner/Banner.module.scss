@@ -1,8 +1,8 @@
 @import "./../../sass/variables.scss";
 
 .header {
-    background-color: $primaryDark;
-    @include mq(xsmall) {
+    background-color: white;
+    @include mq(small) {
         padding: 0 3rem;
     }
     transition: 0.3s ease all;
@@ -39,14 +39,19 @@
         }
     }
 
+    &__profile {
+        
+    }
+
     &__cart__menu {
+        display: flex;
         position: relative;
         top: 2.7rem;
     }
 }
 
 nav {
-    @include mq(xsmall) {
+    @include mq(small) {
         display: none;
     }
 }
