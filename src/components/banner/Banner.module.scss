@@ -1,27 +1,52 @@
 @import "./../../sass/variables.scss";
 
-.container {
+.header {
+    background-color: $primaryDark;
+    @include mq(xsmall) {
+        padding: 0 3rem;
+    }
+    transition: 0.3s ease all;
+
+    &__content {
+        overflow: hidden;
+        margin: 0;
         display: flex;
-        flex-Direction: row;
-        background-Color: $primaryDark;
-        justify-Content: space-between;
-        align-Content: center;
-        padding: 1%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+        z-index: 100;
+    }
+
+    &__cart {
+        margin-right: 1rem;
+        color: $primaryLight;
+        font-size: 1.6rem;
+    }
+
+    &__menu {
+        background-color: $accent1;
+        font-size: 1.6rem;
+
+        @include mq(medium) {
+            display: none;
+        }
+        @include mq(large) {
+            display: none;
+        }
+        @include mq(xlarge) {
+            display: none;
+        }
+    }
+
+    &__cart__menu {
+        position: relative;
+        top: 2.7rem;
+    }
 }
 
-.cart {
-    margin-right: 1rem;
-    color: $primaryLight;
-    font-size: 1.9rem;
-    
-};
-
-.menu {
-    // margin: .7rem;
-    background-Color: $accent1;
-    font-size: 2.1rem;
-};
-
-.banner__cart__menu {
-    margin-top: 2rem;
+nav {
+    @include mq(xsmall) {
+        display: none;
+    }
 }

@@ -1,0 +1,16 @@
+@import "./../../sass/variables.scss";
+
+.navigation__ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 3.9rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation__ul__li {
+    color: $primaryLight;
+    margin-right: calc(0.5rem + #{$spacing-md});
+}
