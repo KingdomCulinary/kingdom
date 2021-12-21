@@ -1,5 +1,6 @@
 @import "./../../sass/variables.scss";
 
+
 .header {
     background-color: $primaryDark;
     @include mq(small) {
@@ -14,6 +15,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
+        max-width: 1920px;
         position: relative;
         z-index: 100;
     }

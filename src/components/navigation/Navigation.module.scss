@@ -12,12 +12,17 @@
 
 .navigation__ul__li {
     font-size: 1rem;
-    font-family: inherit;
+    font-family: Rokkitt;
+    font-weight: 800;
     color: $greys4;
     margin-right: calc(0.5rem + #{$spacing-md});
     transition: 0.3s ease all;
 
     &:hover {
         color: $accent1;
+    }
+
+    &:active {
+        color: $accent2;
     }
 }
