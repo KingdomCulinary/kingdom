@@ -1,17 +1,20 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
+import Loop from "../../src/video/union_market.mp4";
 import classes from "./Home.module.scss";
-import { Player } from "video-react";
+import PostCard from "../components/cards/PostCard";
 
 function Home() {
     return (
         <div>
-            <Banner Page="Home" />
+            <video autoPlay loop muted className={classes.player}>
+                <source src={Loop} type="video/mp4" />
+            </video>
             <main>
-                <video>
-                    <Player />
-                </video>
+            <Banner Page="Home" />
+                <PostCard />
             </main>
+
         </div>
     );
 }
