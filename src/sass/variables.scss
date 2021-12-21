@@ -1,27 +1,27 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-$prifont: Rokkitt, "Playfair Display", "Segoe UI", "Roboto", "Oxygen",
-"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Rajdhani",
-sans-serif;
+$prifont: Rokkitt, "Playfair Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Rajdhani",
+  sans-serif;
 
 // colors
-$primaryLight: #FA844B;
+$primaryLight: #fa844b;
 $primaryDark: #000000;
-$accent1: #F95E10;
-$accent2: #FBA174;
-$accent3: #FCBC9C;
-$accent4: #FEE4D7;
+$accent1: #f95e10;
+$accent2: #fba174;
+$accent3: #fcbc9c;
+$accent4: #fee4d7;
 $drkAccent1: #525252;
-$drkAccent1: #5C5C5C;
-$drkAccent1: #3D3D3D;
+$drkAccent1: #5c5c5c;
+$drkAccent1: #3d3d3d;
 $drkAccent1: #333333;
-$greys1: #A9A9A9;
-$greys2: #B8B8B8;
+$greys1: #a9a9a9;
+$greys2: #b8b8b8;
 $greys3: #474747;
-$greys4: #E0E0E0;
+$greys4: #e0e0e0;
 
 // Spacing
 $spacing-md: 1.6rem;
@@ -33,23 +33,46 @@ $borderRadius: 1.2rem;
 // Header height
 $headerHeight: 10rem;
 
+/* Breakpoints ================= */
+$xlarge:"(min-width: 1200px)";
+$large:"(min-width: 992px)";
+$medium: "(min-width:768px)";
+$small: "(min-width: 576px)";
+$xsmall:"(max-width: 575.98px)";
+
 // mixins
 @mixin mq($size) {
-    @if $size == small {
-        @media (max-width: 575px) {
-        @content;
-      }
-    } @else if $size == medium {
-        @media (min-width: 768px) {
-        @content;
-      }
-    } @else if $size == large {
-        @media (min-width: 992px) {
-        @content;
-      }
-    } @else if $size == xlarge {
-        @media (min-width: 1200px) {
-        @content;
-      }
+  @if $size == small {
+    @media (max-width: 575px) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == large {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $size == xlarge {
+    @media (min-width: 1200px) {
+      @content;
     }
   }
+}
+
+@mixin showNav($size) {
+  @if $size == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+@mixin noPro($size) {
+  @if $size == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}

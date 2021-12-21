@@ -1,7 +1,7 @@
 @import "./../../sass/variables.scss";
 
 .header {
-    background-color: white;
+    background-color: $primaryDark;
     @include mq(small) {
         padding: 0 3rem;
     }
@@ -20,7 +20,7 @@
 
     &__cart {
         margin-right: 1rem;
-        color: $primaryLight;
+        color: $greys4;
         font-size: 1.6rem;
     }
 
@@ -39,19 +39,32 @@
         }
     }
 
-    &__profile {
-        
-    }
-
     &__cart__menu {
         display: flex;
         position: relative;
         top: 2.7rem;
     }
+
+
+    &__profMenu {
+        @include noPro(small) {
+            display: none;
+        }
+    }
+
+    &__cart__profile {
+        display: flex;
+    }
+
+}
+
+.user {
+    position: relative;
+    top: 2.7rem;
 }
 
 nav {
-    @include mq(small) {
+    @include showNav(small) {
         display: none;
     }
 }

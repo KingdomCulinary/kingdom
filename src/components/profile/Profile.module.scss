@@ -1,13 +1,24 @@
 @import "./../../sass/variables.scss";
 
-.container {
+.profile {
     display: flex;
     flex-Direction: row;
-    
-};
 
-.profile__icon {
-    margin-right: .5rem;
-    color: $accent1;
-    font-size: 1.6rem;
-}
+    @include noPro(small) {
+        display: none;
+    }
+
+    &__icon {
+        margin-right: .5rem;
+        color: $greys2;
+        font-size: 1.6rem;
+    }
+
+    &__user {
+        position: relative;
+        top: .6rem;
+        margin-right: .5rem;
+        color: $greys4;
+        font-size: 1rem;
+    }
+};
