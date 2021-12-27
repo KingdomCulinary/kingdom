@@ -1,0 +1,25 @@
+@import "./../../sass/variables.scss";
+
+.btnContent {
+    position: absolute;
+    margin: 0;
+    top: 38%;
+    left: 42%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: .15rem solid $accent4;
+    padding: .50rem 2.7rem;
+    color: $greys4;
+    font-size: 1.4rem;
+
+    @include mq(small) {
+        position: absolute;
+    margin: 0;
+    top: 38%;
+    left: 22%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+    
+}

@@ -22,6 +22,9 @@ const Navigation = () => {
                     <Link to="/recipe">Recipe</Link>
                 </li>
                 <li className={classes.navigation__ul__li}>
+                    <Link to="/shop">Shop</Link>
+                </li>
+                <li className={classes.navigation__ul__li}>
                     <Link to="/about">About</Link>
                 </li>
             </ul>

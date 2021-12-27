@@ -6,4 +6,10 @@
     height: 100%;
     object-fit: cover;
     z-Index: -1;
+
+    @include mq(small) {
+        width: 500px;
+        height: 424px;
+    }
+    
 }

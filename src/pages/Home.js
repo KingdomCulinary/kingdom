@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
+import ReadyBtn from "../components/button/ReadyBtn";
 import Loop from "../../src/video/union_market.mp4";
 import classes from "./Home.module.scss";
 import PostCard from "../components/cards/PostCard";
@@ -12,6 +13,7 @@ function Home() {
             </video>
             <main>
             <Banner Page="Home" />
+            <ReadyBtn btnText="Ready To Book" />
                 <PostCard />
             </main>
 
