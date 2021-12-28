@@ -13,3 +13,25 @@
     }
     
 }
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bioContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 21.2rem;
+    align-items: center;
+    border-top: 2rem solid;
+    background-color: $primaryDark;
+}
+
+.bioPic {
+    @include mq(small) {
+        width: 425px;
+        height: 424px
+    }
+}

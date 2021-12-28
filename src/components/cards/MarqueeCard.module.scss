@@ -1,0 +1,17 @@
+@import "./../../sass/variables.scss";
+
+.marqueeTitle {
+    font-family: "Aclonica";
+    font-size: 2.9rem;
+    color: $greys4;
+}
+
+.marqueeName {
+    position: relative;
+    top: -.5rem;
+    font-family: "$prifont";
+    font-size: 1.4rem;
+    color: $greys4;
+    padding-left: 1rem;
+}
+
