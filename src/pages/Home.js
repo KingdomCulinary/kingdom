@@ -6,6 +6,7 @@ import Loop from "../../src/video/union_market.mp4";
 import Chef from "../../src/images/bio.jpg";
 import classes from "./Home.module.scss";
 import PostCard from "../components/cards/PostCard";
+import CarouselPlayer from "../components/carousel/CarouselPlayer";
 
 function Home() {
     return (
@@ -22,6 +23,9 @@ function Home() {
                         <img src={Chef} alt="bio pic" className={classes.bioPic} />
                     </figure>
                     <PostCard />
+                </section>
+                <section className={classes.caro__container}>
+                    <CarouselPlayer />
                 </section>
 
             </main>
