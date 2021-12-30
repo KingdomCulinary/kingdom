@@ -1,0 +1,12 @@
+@import "./../../sass/variables.scss";
+
+
+.marqueeName {
+    position: relative;
+    top: 1rem;
+    font-family: "$prifont";
+    font-size: 1.8rem;
+    color: $greys4;
+    padding-left: 1rem;
+}
+

@@ -1,11 +1,10 @@
 @import "./../../sass/variables.scss";
 
 .chef__content {
-    width: 545px;
+    width: 425px;
     height: auto;
-}
-
-.chef__spacer {
-    width: 545px;
-    height: 24px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: $greys4;
+    background-color: $primaryDark;
 }

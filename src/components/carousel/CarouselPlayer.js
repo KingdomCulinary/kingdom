@@ -1,13 +1,18 @@
 import React from "react";
 import classes from "./CarouselPlayer.module.scss";
 import { Carousel } from 'react-carousel-minimal';
-import One from "../../images/IMG_0337.JPG"
+import One from "../../images/IMG_0337.jpg";
+import Two from "../../images/IMG_0330.jpg";
 
 function CarouselPlayer() {
     const data = [
         {
             image: One,
             caption: "test"
+        },
+        {
+            image: Two,
+            caption: "test2"
         }
     ];
 
@@ -21,7 +26,7 @@ function CarouselPlayer() {
     }
 
     return (
-        <div>
+        <div className={classes.carousel__container}>
             <div style={{ textAlign: "center" }}>
                 <div style={{
                     padding: "0 20px"
@@ -33,16 +38,16 @@ function CarouselPlayer() {
                         height="551px"
                         captionStyle={captionStyle}
                         radius="10px"
-                        slideNumber={true}
+                        slideNumber={false}
                         slideNumberStyle={slideNumberStyle}
                         captionPosition="bottom"
-                        automatic={true}
-                        dots={true}
+                        automatic={false}
+                        dots={false}
                         pauseIconColor="white"
                         pauseIconSize="40px"
                         slideBackgroundColor="$primaryDark"
-                        slideImageFit="cover"
-                        thumbnails={false}
+                        slideImageFit="contain"
+                        thumbnails={true}
                         thumbnailWidth="100px"
                         style={{
                             textAlign: "center",

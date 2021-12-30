@@ -19,28 +19,81 @@
     flex-direction: column;
 }
 
+.bio__section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 39rem;
+    background-color: $primaryDark;
+    justify-content: center;
+}
+
 .bioContent {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 38rem;
-    border-top: 2rem solid;
+    top: 0rem;
+    border-top: 1rem solid;
     background-color: $primaryDark;
 
     @include mq(small) {
-        top: 21.2rem;
+        top: -22rem;
         align-items: center;
     }
 }
 
 .bioPic {
     @include mq(small) {
-        width: 425px;
-        height: 424px
+        width: 428px;
+        height: 424px;
+    }
+}
+
+.marquee__xpos {
+    position: relative;
+    left: 27rem;
+
+    @include mq(small) {
+        position: relative;
+    left: 0rem;
     }
 }
 
 .caro__container {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: 15rem
+    top: 38rem;
+    align-items: center;
+    background-color: $primaryDark;
+
+    @include mq(small) {
+        top: 18rem;
+    align-items: center;
+    }
+}
+
+.chef__bio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0rem;
+    background-color: $primaryDark;
+    // z-Index: -1;
+
+    @include mq(small) {
+        width: 240px;
+        top: 20rem;
+        text-align: center;
+    }
+}
+
+.bio__text {
+    position: relative;
+    top: 5rem;
+    padding-left: 2rem;
+
+    @include mq(small) {
+        display: none;
+    }
 }
