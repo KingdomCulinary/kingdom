@@ -3,7 +3,7 @@ import Banner from "../components/banner/Banner";
 import ReadyBtn from "../components/button/ReadyBtn";
 import MarqueeCard from "../components/title/MarqueeCard"
 import Loop from "../../src/video/union_market.mp4";
-import Chef from "../../src/images/IMG_0323.jpg";
+import Chef from "../../src/images/bio.jpg";
 import classes from "./Home.module.scss";
 import CarouselPlayer from "../components/carousel/CarouselPlayer";
 import TitleCard from "../components/title/TitleCard";
@@ -18,13 +18,13 @@ function Home() {
             <main>
                 <Banner Page="Home" />
                 <ReadyBtn btnText="Ready To Book" />
-                <section className={classes.bio__section}>
-                    <article className={classes.bioContent}>
+                <section className={classes.bio}>
+                    <article className={classes.bio__content}>
                         <div className={classes.marquee__xpos}>
                             <MarqueeCard />
                         </div>
                         <figure>
-                            <img src={Chef} alt="bio pic" className={classes.bioPic} />
+                            <img src={Chef} alt="bio pic" className={classes.bio__pic} />
                         </figure>
                     </article>
                     <article className={classes.bio__text}>
@@ -35,7 +35,7 @@ function Home() {
                     <TitleCard />
                     <CarouselPlayer />
                 </section>
-                {/* <section className={classes.chef__bio}>
+                {/* <section className={classes.bio__chef}>
                     <ChefCard />
                 </section> */}
             </main>
