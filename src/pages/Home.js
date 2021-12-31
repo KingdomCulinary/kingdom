@@ -35,9 +35,9 @@ function Home() {
                     <TitleCard />
                     <CarouselPlayer />
                 </section>
-                {/* <section className={classes.bio__chef}>
+                <section className={classes.bio__chef}>
                     <ChefCard />
-                </section> */}
+                </section>
             </main>
 
         </div>
